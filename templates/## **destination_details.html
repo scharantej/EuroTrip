@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ destination.name }}</title>
+</head>
+<body>
+<h1>{{ destination.name }}</h1>
+<p>{{ destination.description }}</p>
+<h2>Attractions</h2>
+<ul>
+{% for attraction in destination.attractions %}
+<li>{{ attraction.name }}</li>
+{% endfor %}
+</ul>
+<h2>Accommodations</h2>
+<ul>
+{% for accommodation in destination.accommodations %}
+<li>{{ accommodation.name }}</li>
+{% endfor %}
+</ul>
+<h2>Transportation</h2>
+<ul>
+{% for transportation in destination.transportation %}
+<li>{{ transportation.name }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
