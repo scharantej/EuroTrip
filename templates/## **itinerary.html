@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Itinerary</title>
+</head>
+<body>
+<h1>My Itinerary</h1>
+<ul>
+{% for destination in itinerary %}
+<li>{{ destination.name }}</li>
+{% endfor %}
+</ul>
+<a href="/add_destination">Add Destination</a>
+<a href="/remove_destination">Remove Destination</a>
+</body>
+</html>
+
