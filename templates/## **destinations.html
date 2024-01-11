@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Europe Destinations</title>
+</head>
+<body>
+<h1>European Destinations</h1>
+<ul>
+{% for destination in destinations %}
+<li><a href="/destination/{{ destination.id }}">{{ destination.name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
